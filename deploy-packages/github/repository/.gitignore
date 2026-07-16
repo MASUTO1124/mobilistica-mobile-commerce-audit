@@ -1,0 +1,23 @@
+# secrets（本プロジェクトはキーをファイル保存しない方針だが多層防御）
+.env
+*.key
+*credentials*
+
+# node
+node_modules/
+npm-debug.log*
+
+# 生成物（ビルドで再現可能なもの）
+web-app/vendor/
+web-app/mock-audit.json
+wordpress-plugin/mobilistica-mobile-audit/assets/vendor/
+wordpress-plugin/mobilistica-mobile-audit/assets/app.mjs
+wordpress-plugin/mobilistica-mobile-audit/assets/styles.css
+deploy-packages/wordpress/plugin-zip/
+
+# 実サイト診断結果（公開リポジトリに含めない。サンプルはexamples/のみ）
+reports/live-audits/
+
+# OS
+Thumbs.db
+.DS_Store

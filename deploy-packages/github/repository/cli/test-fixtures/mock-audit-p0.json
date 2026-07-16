@@ -1,0 +1,62 @@
+{
+  "audit_id": "ma_1752600100_e5f6a7b8",
+  "target_url": "http://insecure-example.invalid/",
+  "final_url": "http://insecure-example.invalid/",
+  "audited_at": "2026-07-15T09:05:00.000Z",
+  "strategy": "mobile",
+  "platform": {
+    "detected": "unknown",
+    "confidence": "estimated",
+    "evidence": []
+  },
+  "data_sources": ["html_fallback"],
+  "mobile_score": 22,
+  "performance": {},
+  "core_web_vitals": {
+    "lcp_ms": { "value": null, "rating": null },
+    "inp_ms": { "value": null, "rating": null },
+    "cls": { "value": null, "rating": null },
+    "tbt_ms": { "value": null, "rating": null },
+    "fcp_ms": { "value": null, "rating": null },
+    "si_ms": { "value": null, "rating": null },
+    "ttfb_ms": { "value": null, "rating": null }
+  },
+  "resources": {},
+  "images": {},
+  "javascript": {},
+  "css": {},
+  "fonts": {},
+  "third_party": {},
+  "mobile_ux": {},
+  "commerce_ux": { "page_type": "product_detail" },
+  "technical_seo": { "status": 200 },
+  "security": { "https": false, "hsts": false, "mixed_content": false },
+  "recommendations": [
+    {
+      "issue_id": "security-https-unavailable",
+      "category": "security_headers",
+      "priority": "P0",
+      "title": "サイトがHTTPS未対応です（購入不能級）",
+      "evidence": ["target_url が http:// スキームで、https:// へのリダイレクトが確認できません"],
+      "business_impact": "モバイルブラウザで「保護されていません」警告が表示され、購入フォームへの入力自体が敬遠され、購入機会を失います。",
+      "recommended_fix": "サイト全体をHTTPS化し、http→httpsへの301リダイレクトを設定してください。",
+      "implementation_owner": "server",
+      "estimated_effort": "medium",
+      "confidence": 95,
+      "automatic_fix_possible": false,
+      "scores": { "sales_impact": 5, "mobile_ux_impact": 5, "seo_impact": 4, "cwv_impact": 0, "difficulty": 3, "cost": 2, "certainty": 5 },
+      "platform_advice": { "generic": "SSL証明書導入後、Webサーバー設定でHTTPS強制。" },
+      "term": "immediate"
+    }
+  ],
+  "summary": {
+    "overall_score": 22,
+    "grade": "E",
+    "top_issues": ["security-https-unavailable"],
+    "executive_summary_ja": "HTTPS未対応のため購入不能級の課題（P0）が検出されました。最優先で対応してください。"
+  },
+  "limitations": [
+    "PSI APIが利用できずHTML簡易診断のみの結果です",
+    "本結果はcli自己テスト用のモックデータです（MOBILISTICA_AUDIT_MOCK・P0検出パターン）"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "https://shop.mobilistica-test.com/product/cotton-apron/",
+  "loadingExperience": {
+    "id": "https://shop.mobilistica-test.com/product/cotton-apron/",
+    "metrics": {
+      "LARGEST_CONTENTFUL_PAINT_MS": { "percentile": 4200, "category": "SLOW" },
+      "CUMULATIVE_LAYOUT_SHIFT_SCORE": { "percentile": 18, "category": "AVERAGE" },
+      "INTERACTION_TO_NEXT_PAINT_MS": { "percentile": 320, "category": "AVERAGE" }
+    }
+  },
+  "lighthouseResult": {
+    "finalUrl": "https://shop.mobilistica-test.com/product/cotton-apron/",
+    "categories": {
+      "performance": { "score": 0.42 },
+      "accessibility": { "score": 0.81 },
+      "best-practices": { "score": 0.75 },
+      "seo": { "score": 0.9 }
+    },
+    "audits": {
+      "largest-contentful-paint": { "score": 0.2, "numericValue": 4200, "displayValue": "4.2 s" },
+      "cumulative-layout-shift": { "score": 0.6, "numericValue": 0.18, "displayValue": "0.18" },
+      "total-blocking-time": { "score": 0.3, "numericValue": 650, "displayValue": "650 ms" },
+      "first-contentful-paint": { "score": 0.5, "numericValue": 2100, "displayValue": "2.1 s" },
+      "speed-index": { "score": 0.4, "numericValue": 5200, "displayValue": "5.2 s" },
+      "server-response-time": { "score": 0.5, "numericValue": 950, "displayValue": "Root document took 950 ms" },
+      "unused-javascript": {
+        "score": 0.3,
+        "numericValue": 180000,
+        "details": { "items": [{ "url": "https://shop.mobilistica-test.com/wp-content/plugins/heavy-plugin/bundle.js", "wastedBytes": 180000 }] }
+      },
+      "unused-css-rules": {
+        "score": 0.5,
+        "numericValue": 60000,
+        "details": { "items": [{ "url": "https://shop.mobilistica-test.com/style.css", "wastedBytes": 60000 }] }
+      },
+      "render-blocking-resources": {
+        "score": 0.4,
+        "details": { "items": [
+          { "url": "https://shop.mobilistica-test.com/style.css" },
+          { "url": "https://shop.mobilistica-test.com/wp-content/plugins/a/style.css" },
+          { "url": "https://shop.mobilistica-test.com/wp-content/plugins/b/script.js" }
+        ] }
+      },
+      "mainthread-work-breakdown": { "score": 0.4, "numericValue": 3200 },
+      "bootup-time": { "score": 0.4, "numericValue": 1800 },
+      "dom-size": { "score": 0.6, "numericValue": 1800, "displayValue": "1,800 elements" },
+      "long-tasks": { "score": 0.3, "details": { "items": [{ "duration": 320 }, { "duration": 210 }] } },
+      "network-dependency-tree": {
+        "score": null,
+        "details": {
+          "chains": {
+            "a": { "children": { "b": { "children": { "c": {} } } } }
+          }
+        }
+      },
+      "modern-image-formats": {
+        "score": 0.4,
+        "numericValue": 150000,
+        "details": { "items": [{ "url": "https://shop.mobilistica-test.com/wp-content/uploads/apron-main.jpg", "wastedBytes": 150000 }] }
+      },
+      "uses-responsive-images": { "score": 0.7, "numericValue": 20000, "details": { "items": [] } },
+      "offscreen-images": {
+        "score": 0.5,
+        "numericValue": 200000,
+        "details": { "items": [{ "url": "https://shop.mobilistica-test.com/wp-content/uploads/banner-below-fold.jpg", "wastedBytes": 200000 }] }
+      },
+      "lcp-lazy-loaded": { "score": 0, "displayValue": "" },
+      "prioritize-lcp-image": { "score": 0 },
+      "unsized-images": { "score": 0.5, "details": { "items": [{ "url": "https://shop.mobilistica-test.com/wp-content/uploads/x.jpg" }] } },
+      "uses-http2": { "score": 0, "details": { "items": [{ "url": "https://shop.mobilistica-test.com/style.css" }] } },
+      "third-party-summary": {
+        "score": 0.4,
+        "numericValue": 700,
+        "details": {
+          "items": [
+            { "entity": "Google Analytics", "transferSize": 45000, "blockingTime": 300 },
+            { "entity": "Facebook Pixel", "transferSize": 60000, "blockingTime": 400 }
+          ]
+        }
+      },
+      "tap-targets": { "score": 0.6 },
+      "font-size": { "score": 1 }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+<!--
+================================================================================
+Mobilistica LP: /tools/mobile-commerce-audit/ （WordPress固定ページ本文用HTML）
+貼り付け先: 固定ページ（英語slug: mobile-commerce-audit・親ページ tools）
+================================================================================
+【SEO設定（Rank Math Pro側で設定する値。本文にmetaタグを直書きしない）】
+
+■ title案（いずれか1つをRank Mathに設定）
+1. モバイルECサイト無料診断｜表示速度・購入導線を売上影響順にチェック | Mobilistica
+2. ECサイトのモバイル表示速度を無料診断｜Core Web Vitals×購入導線 | Mobilistica
+3. 無料のモバイルEC診断ツール｜PageSpeedを「売上の言葉」に翻訳 | Mobilistica
+
+■ meta description案
+1. URLを入れるだけでECサイトのモバイル表示速度・Core Web Vitals・購入導線を無料診断。技術用語ではなく売上への影響順に、直すべき優先順位を提示します。登録不要。
+2. PageSpeedの点数を見ても何から直すべきか分からない方へ。ECサイト特化の無料診断が、改善項目を売上影響×難易度で優先順位付けします。CLI・オープンソース版あり。
+3. モバイルECサイト無料診断。画像・JavaScript・購入ボタンまでの導線をチェックし、WordPress/WooCommerce/Shopify別の改善方法を提示。結果はブラウザ内生成で安心。
+
+■ canonical: https://www.mobilistica.com/tools/mobile-commerce-audit/
+■ OG/X Card: og:type=website / og:title=title案と同一 / og:image=（後日: marketing/og-images/作成後に設定）/ twitter:card=summary_large_image
+■ Rank Math注意: 本ページのJSON-LD（下記WebApplication+FAQPage）はRank Mathの自動Schema（WebPage等）と併存する。
+  貼り付け後にソースを確認し、FAQPageが二重出力される場合はRank Math側のFAQブロックを使わないこと。
+  BreadcrumbListはRank Math出力に任せる（本文に含めない）。
+================================================================================
+-->
+
+<!-- ① ファーストビュー -->
+<div class="mca-hero">
+  <h1>モバイルECサイト無料診断</h1>
+  <p>URLを入れるだけで、スマートフォンでの表示速度・Core Web Vitals・購入導線を検査し、<strong>「売上にどう効くか」の順番</strong>で直すべき箇所をお出しします。登録・メールアドレス不要、結果はその場で表示されます。</p>
+  <p><a class="mca-cta-primary" href="#audit-form-anchor">今すぐ無料で診断する</a></p>
+</div>
+
+<!-- ② 診断フォーム -->
+<h2 id="audit-form-anchor">診断フォーム</h2>
+[mobilistica_mobile_audit]
+
+<!-- ③ 何が分かるか -->
+<h2>この診断で分かること</h2>
+<ul>
+  <li><strong>モバイルECスコア（100点満点）</strong> — 表示速度だけでなく、購入導線・モバイル操作性を含めたECサイトとしての総合評価</li>
+  <li><strong>Core Web Vitals</strong> — LCP（表示の速さ）・INP（操作への反応）・CLS（表示のガタつき）の実測値と評価</li>
+  <li><strong>優先して直すべき課題 上位5件</strong> — 「何が」「売上にどう影響し」「誰が・どれくらいの手間で」直せるかを1件ずつ説明</li>
+  <li><strong>環境別の改善方法</strong> — WordPress / WooCommerce / Shopify を自動判定し、それぞれに合った直し方を提示</li>
+  <li><strong>保存できる詳細レポート</strong> — HTML / JSONでダウンロードでき、修正後にもう一度診断して前後比較ができます</li>
+</ul>
+
+<!-- ④ 一般的なPageSpeed診断との違い -->
+<h2>ふつうのPageSpeed診断と何が違うのか</h2>
+<p>PageSpeed Insightsは優れたツールですが、結果は技術用語で並び、「結局どれから直せば売上に効くのか」は教えてくれません。本診断は同じ実測データを使ったうえで、次の翻訳を加えます。</p>
+<table>
+  <thead><tr><th>一般的な診断</th><th>モバイルEC診断</th></tr></thead>
+  <tbody>
+    <tr><td>「使用していないJavaScriptの削減」</td><td>「購入ボタンが押せるようになるまで◯秒待たせています。離脱の主要因です」</td></tr>
+    <tr><td>技術項目が難易度順不同で並ぶ</td><td>売上影響×修正難易度で P0〜P4 に優先順位付け</td></tr>
+    <tr><td>誰が直すべきか不明</td><td>運営者/デザイナー/フロントエンド/サーバー担当を項目ごとに明示</td></tr>
+    <tr><td>汎用的な推奨</td><td>WordPress・WooCommerce・Shopify別の具体的な直し方</td></tr>
+  </tbody>
+</table>
+
+<!-- ⑤ EC特有の診断項目 -->
+<h2>ECサイト特有のチェック項目</h2>
+<ul>
+  <li>商品画像の重さ・次世代フォーマット（WebP/AVIF）対応・遅延読み込みの適否</li>
+  <li>ファーストビューで「商品名・価格・購入ボタン」が見えるか</li>
+  <li>カート・購入ボタンの検出と、そこに到達するまでの構造</li>
+  <li>送料・返品・支払いなど購入判断に必要な情報の有無</li>
+  <li>商品Schema（構造化データ）・パンくず・レビュー表示</li>
+  <li>解析タグ・広告タグ・チャットなど外部スクリプトによる速度低下</li>
+</ul>
+<p>※ページ種別（トップ/商品一覧/商品詳細/カート等）は公開HTMLから自動推定します。実際のカート操作・購入操作は行いません。</p>
+
+<!-- ⑥ 診断結果サンプル -->
+<h2>診断結果のサンプル</h2>
+<p>実際の出力イメージです（項目は診断対象により変わります）。</p>
+<figure class="mca-sample">
+  <blockquote>
+    <p><strong>モバイルECスコア: 62（C）</strong>／PageSpeed: 58</p>
+    <p>🔴 <strong>P1: メイン画像が重く、表示に4.2秒かかっています</strong><br>
+    スマートフォンの訪問者は商品を見る前に離脱しやすい状態です。→ WebP形式への変換とfetchpriority指定（担当: フロントエンド／目安: small）</p>
+    <p>🟠 <strong>P2: 外部タグが7種類読み込まれ、操作への反応が遅れています</strong><br>
+    ボタンを押してから反応まで待ち時間が発生します。→ 使っていない解析タグの削除（担当: 運営者／目安: small）</p>
+  </blockquote>
+</figure>
+
+<!-- ⑦ 使い方 -->
+<h2>使い方（3ステップ）</h2>
+<ol>
+  <li>上の<a href="#audit-form-anchor">診断フォーム</a>にECサイトのURLを入力</li>
+  <li>30〜60秒ほど待つと結果が表示されます</li>
+  <li>「詳細レポートを保存」でHTML保存。修正後に再診断すると前後比較ができます</li>
+</ol>
+
+<!-- ⑧ CLI・Claude Codeスキル -->
+<h2>開発者向け: CLI・Claude Codeスキル</h2>
+<p>同じ診断エンジンを、コマンドラインとAIコーディング支援（Claude Code）から使えます。定期実行・CI組み込み・修正指示の自動生成に便利です。</p>
+<pre><code>npx mobilistica-audit https://example.com --format html --output ./reports</code></pre>
+<p>Claude Codeでは「このECサイトをモバイル中心に診断して」と話しかけるだけで、診断から修正指示の生成まで行えます。導入方法はGitHubをご覧ください。</p>
+
+<!-- ⑨ GitHub -->
+<h2>オープンソースです</h2>
+<p>診断ロジックはすべて<a href="https://github.com/MASUTO1124/mobilistica-mobile-commerce-audit" rel="noopener">GitHubで公開</a>しています。どんな基準で判定しているかを誰でも確認でき、改善提案（Issue・Pull Request）も歓迎します。MIT License。</p>
+
+<!-- ⑩ 改善事例 -->
+<h2>実際の改善事例</h2>
+<p>Mobilisticaでは、この診断と同じ観点でECサイトの改善を実践しています。実測記録: <a href="https://www.mobilistica.com/?p=635">ECサイトのモバイルPageSpeedスコアを28点から76点に改善した実測記録</a>（画像最適化・キャッシュ調整などの具体的な手順つき）。</p>
+
+<!-- ⑪ 対応環境 -->
+<h2>対応環境</h2>
+<ul>
+  <li>診断対象: 公開されているWebサイト（WordPress / WooCommerce / Shopify / その他。プラットフォームは自動判定）</li>
+  <li>Web版: モダンブラウザ（Chrome / Edge / Safari / Firefox の最新版）</li>
+  <li>CLI版: Node.js 20以上（Windows / macOS / Linux）</li>
+  <li>診断できないもの: ログインが必要なページ・社内ネットワーク上のサイト・localhost</li>
+</ul>
+
+<!-- ⑫ セキュリティとプライバシー -->
+<h2>セキュリティとプライバシー</h2>
+<ul>
+  <li>メールアドレス等の個人情報は取得しません（結果を見るための登録は不要です）</li>
+  <li>診断はお使いのブラウザとGoogle PageSpeed Insights APIの間で直接行われ、入力URLや結果を当サイトのサーバーに保存しません</li>
+  <li>アクセス解析には入力URLそのものを送信しません</li>
+  <li>診断エンジンはオープンソースで、処理内容を誰でも検証できます</li>
+</ul>
+
+<!-- ⑬ FAQ -->
+<h2>よくある質問</h2>
+<h3>本当に無料ですか？</h3>
+<p>はい。Web版・CLI版・Claude Codeスキルのすべてが無料・オープンソース（MIT License）です。</p>
+<h3>診断結果は保証されますか？</h3>
+<p>診断は公開情報とPageSpeed Insights APIに基づく自動解析であり、検索順位や売上の向上を保証するものではありません。改善の優先判断を助ける目安としてご利用ください。</p>
+<h3>競合サイトを診断してもいいですか？</h3>
+<p>公開ページの診断は可能ですが、同一サイトへの高頻度の連続診断はご遠慮ください。</p>
+<h3>PageSpeed Insightsと数値が違うのはなぜですか？</h3>
+<p>同じAPIを使っていますが、測定タイミングやネットワーク状況で数値は変動します。傾向と優先順位を見るためにお使いください。</p>
+<h3>診断できないサイトはありますか？</h3>
+<p>ログインが必要なページ、公開されていないテスト環境、アクセス制限のあるサイトは診断できません。</p>
+
+<!-- ⑭ 相談導線（控えめ） -->
+<h2>診断の先の改善を手伝ってほしい場合</h2>
+<p>診断結果をもとにご自身で改善を進めていただくのが基本ですが、実装まで手が回らない場合は<a href="https://www.mobilistica.com/contact/">お問い合わせ</a>から相談いただけます（任意です。診断の利用に連絡は不要です）。</p>
+
+<!-- ⑮ 更新履歴 -->
+<h2>更新履歴</h2>
+<ul>
+  <li>2026-07: v0.1.0 公開（Web診断・CLI・Claude Codeスキル）</li>
+</ul>
+
+<!-- JSON-LD: WebApplication + FAQPage（Rank Mathとの重複は貼付後に要確認） -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "モバイルECサイト無料診断（Mobilistica Mobile Commerce Audit）",
+      "url": "https://www.mobilistica.com/tools/mobile-commerce-audit/",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
+      "publisher": { "@type": "Organization", "name": "Mobilistica", "url": "https://www.mobilistica.com/" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "本当に無料ですか？", "acceptedAnswer": { "@type": "Answer", "text": "はい。Web版・CLI版・Claude Codeスキルのすべてが無料・オープンソース（MIT License）です。" } },
+        { "@type": "Question", "name": "診断結果は保証されますか？", "acceptedAnswer": { "@type": "Answer", "text": "診断は公開情報とPageSpeed Insights APIに基づく自動解析であり、検索順位や売上の向上を保証するものではありません。改善の優先判断を助ける目安としてご利用ください。" } },
+        { "@type": "Question", "name": "PageSpeed Insightsと数値が違うのはなぜですか？", "acceptedAnswer": { "@type": "Answer", "text": "同じAPIを使っていますが、測定タイミングやネットワーク状況で数値は変動します。傾向と優先順位を見るためにお使いください。" } }
+      ]
+    }
+  ]
+}
+</script>

@@ -1,0 +1,13 @@
+--- original-content.html
++++ approved-content.html
+@@ -41,3 +41,10 @@
+ 
+ <h2>まとめ</h2>
+ <p>統計的な「一般論」ではなく、実際に運営しているサイトの実測データをもとに、何をしたらどれだけ変わったか、そして何が効かなかったかを具体的に記録していくのがMobilisticaの方針です。今後も改善事例を随時追加していきます。</p>
++
++<h2>自分のサイトで同じ項目を確認する</h2>
++<p>この記事で確認した画像・CSS・キャッシュなどの項目は、Mobilisticaが公開している<a href="https://www.mobilistica.com/tools/mobile-commerce-audit/">モバイルECサイト無料診断</a>で、ご自身のサイトについて無料でチェックできます。URLを入力するだけで、改善すべき箇所が売上への影響順に表示されます（登録不要）。</p>
++<ul>
++<li>修正の前後で再診断すれば、この記事のようなビフォーアフター比較ができます</li>
++<li>開発者の方は<a href="https://github.com/MASUTO1124/mobilistica-mobile-commerce-audit">オープンソース版（CLI・Claude Codeスキル）</a>で、修正用のAI向け改善指示も生成できます</li>
++</ul>
