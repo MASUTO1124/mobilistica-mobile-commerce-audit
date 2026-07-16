@@ -33,10 +33,11 @@ It is **not** a guarantee of higher rankings or more sales — see [Limitations]
 
 ## Screenshots
 
-> Screenshots will be added to `assets/screenshots/` once the web UI and the self-contained HTML report are finalized. This section is a placeholder — no images are embedded here yet.
+| Web UI (mobile) | HTML report |
+|---|---|
+| ![Web audit UI on a 390px viewport, showing the mobile commerce score, Core Web Vitals and top issues](assets/screenshots/web-app-mobile-390.png) | ![Self-contained HTML report at desktop width](assets/screenshots/html-report-1280.png) |
 
-<!-- assets/screenshots/web-ui-overview.png -->
-<!-- assets/screenshots/html-report-top-issues.png -->
+![Web audit UI at desktop width](assets/screenshots/web-app-desktop-1280.png)
 
 ## 30-second example
 
