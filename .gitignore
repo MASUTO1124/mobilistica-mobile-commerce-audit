@@ -21,3 +21,6 @@ reports/live-audits/
 # OS
 Thumbs.db
 .DS_Store
+
+# ローカル生成物（git archiveで再現可能・公開リポジトリの二重化防止）
+deploy-packages/github/repository/
