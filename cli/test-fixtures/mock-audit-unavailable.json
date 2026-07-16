@@ -1,0 +1,33 @@
+{
+  "audit_id": "ma_1752600200_c9d0e1f2",
+  "target_url": "https://unreachable-example.invalid/",
+  "final_url": "https://unreachable-example.invalid/",
+  "audited_at": "2026-07-15T09:10:00.000Z",
+  "strategy": "mobile",
+  "platform": { "detected": "unknown", "confidence": "estimated", "evidence": [] },
+  "data_sources": [],
+  "mobile_score": null,
+  "performance": {},
+  "core_web_vitals": {},
+  "resources": {},
+  "images": {},
+  "javascript": {},
+  "css": {},
+  "fonts": {},
+  "third_party": {},
+  "mobile_ux": {},
+  "commerce_ux": {},
+  "technical_seo": {},
+  "security": {},
+  "recommendations": [],
+  "summary": {
+    "overall_score": null,
+    "grade": "E",
+    "top_issues": [],
+    "executive_summary_ja": "全てのデータ取得手段が失敗したため、診断結果を算出できませんでした。"
+  },
+  "limitations": [
+    "PSI API・ローカルLighthouse・HTML簡易診断のすべてでデータを取得できませんでした",
+    "本結果はcli自己テスト用のモックデータです（MOBILISTICA_AUDIT_MOCK・データ全滅パターン）"
+  ]
+}
